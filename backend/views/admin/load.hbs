@@ -1,0 +1,17 @@
+<div class="container">
+    <form method="post" action="/admin/controlPanel/agregarVianda" enctype="multipart/form-data">
+    <label for="imagen">Imagen</label>
+    <input type="file" id="imagen" name="imagen">
+    <label for="titulo" >Titulo</label>
+    <input type="text" id="titulo" name="titulo">
+    <label for="descripcion">Descripcion</label>
+    <input type="text" id="descripcion" name="descripcion">
+    <label for="nombre">Nombre</label>   
+    <input type="text" id="nombre" name="nombre">
+
+    <input type="submit" value="cargarVianda">
+    {{#if error}}
+    <div>{{error}}</div>
+    {{/if}}
+    </form> 
+</div>

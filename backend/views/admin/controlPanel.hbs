@@ -1,0 +1,64 @@
+<div class="container">
+  <div class="main">
+
+    <h1>PANEL DE CONTROL</h1>
+     <a href="/admin/login/logout" class="button-41">Cerrar Sesion</a>
+    <div>
+      <h2>CARRUSEL DE IMAGENES</h2>
+      {{#each carrusel}}
+        <div class="imagen_carrusel">
+          <img src="/images/{{imagen}}" />
+          <label>{{titulo}}</label>
+          <a
+            type="#"
+            href="/admin/controlPanel/eliminarImagen/{{_id}}"
+            class="button-41"
+          >Eliminar imagen</a>
+
+        </div>
+      {{/each}}
+    </div>
+    <a href="/admin/controlPanel/carrusel" class="button-41">Cargar Imagen</a>
+
+    <div>
+
+      <h2>LISTADO DE VIANDAS</h2>
+      <a href="/admin/controlPanel/load" class="button-41">Cargar una vianda</a>
+      <div class="edic_table">
+        <h2>VIANDAS</h2>
+        <table>
+          <thead>
+            <tr>
+              <td>Imagen</td>
+              <td>Nombre</td>
+              <td>Titulo</td>
+              <td>Descripcion</td>
+              <td>Eliminar</td>
+              <td>Editar</td>
+            </tr>
+          </thead>
+          <tbody>
+            {{#each data}}
+              <tr>
+                <td><img src="/images/{{imagen}}" clas /></td>
+                <td>{{nombre}}</td>
+                <td>{{titulo}}</td>
+                <td class="descripcion">{{descripcion}}</td>
+                <td><a
+                    type="#"
+                    href="/admin/controlPanel/eliminar/{{_id}}"
+                    class="button-41"
+                  >Eliminar vianda</a></td>
+                <td><a
+                    type="#"
+                    href="/admin/controlPanel/editar/{{_id}}"
+                    class="button-41"
+                  >Editar vianda</a></td>
+              </tr>
+            {{/each}}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

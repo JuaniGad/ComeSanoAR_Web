@@ -1,0 +1,14 @@
+<div class="container">
+    <form action='/admin/controlPanel/cargar_edicion' method="post" enctype="multipart/form-data">
+    <input type="hidden" value={{elemento._id}} name="_id">
+    <label>Imagen</label>   
+    <input type="file" value="/images/{{elemento.imagen}}" name="imagen">    
+    <label>Nombre</label>
+    <textarea type="text" name="nombre">{{elemento.nombre}}</textarea>    
+    <label>Titulo</label>
+    <textarea type="text" name="titulo">{{elemento.titulo}}</textarea>    
+    <label>Descripcion</label>
+    <textarea type="text" class="edit_desc"  name="descripcion">{{elemento.descripcion}}</textarea>
+    <button type="submit" class="button-41">EDITAR</button>
+    </form>    
+</div>

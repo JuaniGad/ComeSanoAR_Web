@@ -1,0 +1,15 @@
+<div class="container">
+    <form method="post" action="/admin/controlPanel/agregarImagen" enctype="multipart/form-data">
+    <label for="imagen">Imagen</label>
+    <input type="file" id="imagen" name="imagen">
+    <label for="titulo" >Titulo</label>
+    <input type="text" id="titulo" name="titulo">
+    <label for="alt">Alt</label>   
+    <input type="text" id="alt" name="alt">
+
+    <input type="submit" value="cargarImagen">
+    {{#if error}}
+    <div>{{error}}</div>
+    {{/if}}
+    </form> 
+</div>
