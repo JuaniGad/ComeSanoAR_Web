@@ -1,0 +1,221 @@
+.App {  
+  margin: 0 auto;
+}
+
+.container{
+  width: 80%;
+  margin: 0 auto;         
+}
+
+/*Caracteristaicas del producto*/
+.cualidadesBox{
+  display: inline-block;
+  width: 30%;
+  margin-right: 10px;
+}
+
+.titulo{
+  margin-top: 35px;
+  font-size: 32px;
+  font-weight: bold;
+  color: rgb(148, 148, 144);
+}
+
+
+.cualidadesBox img{ 
+    object-fit: cover;
+    width:100%;
+    height:100%;   
+}
+/*Categorias y tipos de viandas*/
+.section_cat{
+  margin-top: 25px;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  gap: 10px;
+}
+
+.titulo_cat{
+  margin-top: 20px;
+  font-size: 28px;
+  font-weight: bold;
+  color: rgb(33, 33, 32);
+}
+
+.categoria{
+  width: 450px;
+  background-color: blanchedalmond;
+  border-radius: 10px;
+  padding:25px;  
+  margin: auto;
+  margin-bottom: 15px;
+}
+
+.categoria img{ 
+  object-fit: cover;
+  width:100%;
+  height:100%;
+  border-radius: 10px;
+}
+
+.categoria button{
+  border-radius: 10px;
+  border: none;
+  background-color: #5f8c3f;
+  color: white;
+  width: 40%;
+  height: 3rem;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.categoria button:hover{
+  background-color: #132d00;
+}
+/*Pasos para pedidos*/
+.paso_container{
+display: flex;
+justify-content: space-between;
+}
+
+.paso{
+  display: inline-block;
+  width: 30%;
+}
+
+.paso img{
+  max-width: 250px;
+  max-height: 250px;
+  object-fit:cover;
+}
+
+
+/*Formulario de contacto*/  
+
+form {
+  width: 100%;
+  margin: 0 auto;
+  text-align: left;
+  padding: 20px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+form input,
+textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+form input[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+  background-color: #45a049;
+}
+/*Redes*/
+.redes img{
+  max-width: 50px;
+  object-fit: cover;
+  margin-left: 25px;
+}
+
+.redes{
+  padding: 25px;
+  text-align: center;
+}
+
+/*FAQ*/
+.containerpyr{
+  background-image: url("../assets/fondopyr.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: rgba(255, 255, 255, 0.316);
+}
+
+.containerpyr p{
+  color: black;
+  font-weight: bolder;
+}
+
+
+
+@media only screen and (max-width: 1060px){
+  /*Caracteristicas del producto*/
+  .cualidadesBox{
+    width: 250px;
+  }
+
+  .cualidadesBox p{
+    width: 250px;
+  }
+/*Categorias y tipos de viandas*/
+  .section_cat{
+    display: inline-block;
+  }
+
+  .categoria{
+    width: 85%;
+    background-color: blanchedalmond;
+    border-radius: 10px;
+    padding:25px;  
+    margin-bottom: 15px;
+  }
+
+  .categoria button{
+    border-radius: 10px;
+    border: none;
+    background-color: #5f8c3f;
+    color: white;
+    width: 60%;
+    height: 3rem;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  /*Como realizar mi pedido*/
+.paso{
+  display: inline-block;
+  width: 30%;
+}
+
+.paso img{
+  max-width: 200px;
+  max-height: 200px;
+}
+}
+
+@media only screen and (max-width: 860px){
+  /*Como realizar mi pedido*/
+.paso{
+  display: inline-block;
+  width: 60%;
+  padding:15px;
+}
+
+.paso_container{
+  display: inline-block;
+  justify-content: space-between;
+  }
+}
+
